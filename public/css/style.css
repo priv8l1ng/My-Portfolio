@@ -1,0 +1,17 @@
+.zoom-container {
+    position: relative; /* Position relative for absolute positioning of the image */
+    overflow: hidden;  /* Hide overflow */
+    /* make width & height based on image resolution */
+    width: 500px; /* Set width */
+    height: 300px; /* Set height */
+    border-radius: 5px; /* Set border radius */
+    display: inline-block; /* Allow the container to shrink to fit the image */
+    margin-bottom: 10px;
+}
+
+.zoom-image {
+    position: absolute; /* Position absolutely to move freely within the container */
+    width: 300%;       /* Set width larger than the container */
+    height: auto;      /* Maintain aspect ratio */
+    transition: transform 0.1s ease; /* Smooth transition */
+}
